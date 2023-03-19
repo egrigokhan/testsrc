@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+
 def run(msg):
     return "Received message: " + msg
 
