@@ -2,7 +2,7 @@
 import os
 
 def run(msg):
-    return "Received message: " + msg
+    return "Received message: " + open(os.environ['test_file'], "r").read()
 
 def setup(config):
     os.environ['test_file'] = config["test_file"]
